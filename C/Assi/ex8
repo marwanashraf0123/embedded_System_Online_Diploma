@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	float x,y,result=0;
+	char operation;
+	printf("Enter operator either + or - or * or / : \n");
+	fflush(stdout);
+	scanf("%c",&operation);
+
+	printf("Enter two operands: ");
+	fflush(stdout);
+	scanf("%f %f",&x,&y);
+
+
+	switch(operation)
+	{
+	case '+':
+		result = x+y;
+		printf("\n %.1f %c %.1f = %.1f",x,operation,y,result);
+
+		break;
+	case '-':
+		result = x-y;
+		printf("\n %.1f %c %.1f = %.1f",x,operation,y,result);
+
+		break;
+	case '*':
+		result = x*y;
+		printf("\n %.1f %c %.1f = %.1f",x,operation,y,result);
+
+		break;
+	case '/':
+
+		result = x/y;
+		printf("\n %.1f %c %.1f = %.1f",x,operation,y,result);
+		break;
+
+
+	}
