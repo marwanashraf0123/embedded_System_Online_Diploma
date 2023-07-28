@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	float x,y,Product;
+
+	printf("Enter two numbers: ");
+	fflush(stdout);
+	scanf("%f %f",&x,&y);
+	Product= x*y;
+	printf("\nProduct: %f",Product);
+
+	return EXIT_SUCCESS;
+}
