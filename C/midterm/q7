@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int myfunc(int a)
+{
+    int sum = 0;
+    if (a != 0)
+    {
+
+       return a+myfunc(a-1);
+
+    }
+
+
+}
+
+int main()
+{
+  printf("%d",myfunc(100));
+}
