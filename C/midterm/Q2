@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void myfunc(int a)
+{
+
+    float x;
+    float square  = a/2;
+    while (square != x)
+    {
+        x =square;
+        square = (a/x+x)/2;
+
+    }
+    printf("%f",square);
+
+}
+
+
+
+int main()
+{
+    myfunc(10);
+}
