@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void myfunc(int a)
+{
+    int n,res = 0;
+    while (a!=0)
+    {
+      n= a%10;
+      res =   res*10+n;
+      a = a/10;
+
+    }
+    printf("%d",res);
+
+}
+
+
+
+int main()
+{
+    myfunc(2457 );
+}
