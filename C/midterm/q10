@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MASK 0x01
+
+int myfunc(int a)
+{
+    int c = 0;
+    int max = 0 ;
+    for (int  i = 0 ; i < 32 ; i ++)
+    {
+        if ( !(a & (MASK << i)) )
+        {
+            i++;
+            while (a & (MASK << i))
+            {
+                c++;
+                i++;
+            }
+            if (max < c )
+            {
+                max = c;
+            }
+        }
+
+    }
+    return max;
+
+}
+
+int main()
+{
+
+   printf("%d",myfunc(110));
+}
