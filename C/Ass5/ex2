@@ -1,0 +1,30 @@
+/*
+ * ex2.c
+ *
+ *  Created on: 31 Jul 2023
+ *      Author: marwan
+ */
+
+#include<stdio.h>
+
+struct feet_inch
+{
+	float feet;
+	float inch;
+};
+
+int main()
+{
+	struct feet_inch x;
+	struct feet_inch y;
+	printf("Enter Feet measurment\n");
+	scanf ("%f",&x.feet);
+	scanf("%f",&y.feet);
+
+	printf("\nEnter Inch measurement");
+	scanf ("%f",&x.inch);
+    scanf("%f",&y.inch);
+
+    printf("\nSum Of distance:");
+    printf("%f'- %f\"",(x.feet+y.feet),x.inch+y.inch);
+}
