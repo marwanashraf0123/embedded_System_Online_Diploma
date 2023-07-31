@@ -1,0 +1,65 @@
+
+/*
+ * ex2.c
+ /*
+ * ex4.c
+ *
+ *  Created on: 31 Jul 2023
+ *      Author: marwan
+ */
+
+
+#include <stdio.h>
+#include <string.h>
+
+struct Sstudents
+{
+	char name[100];
+	int roll;
+	float mark;
+};
+
+
+
+int main()
+{
+	struct Sstudents s[10];
+	char studentfirst[100];
+	char studentsec[100];
+
+
+	for (int  i = 0 ; i < 2; i++)
+	{
+		printf("Enter Name\n");
+		scanf("%s",studentfirst);
+		scanf("%s",studentsec);
+		strcpy(s[i].name,studentfirst);
+		strcat(s[i].name," ");
+		strcat(s[i].name,studentsec);
+
+
+
+
+		printf("Enter Roll\n");
+		scanf("%d",&s[i].roll);
+
+		printf("Enter mark\n");
+		scanf("%f",&s[i].mark);
+
+	}
+
+	for (int  i = 0 ; i < 2 ; i++)
+	{
+		printf("%s",s[i].name);
+		printf("\n");
+		printf("%d",s[i].roll);
+		printf("\n");
+		printf("%f",s[i].mark);
+		printf("\n");
+
+	}
+
+
+
+
+}
