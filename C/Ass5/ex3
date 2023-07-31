@@ -1,0 +1,42 @@
+/*
+ * ex3.c
+ *
+ *  Created on: 31 Jul 2023
+ *      Author: marwan
+ */
+
+#include<stdio.h>
+
+struct complex
+{
+	float real;
+	float complex;
+};
+
+void add(struct complex *x,struct complex *y)
+{
+      float z ;
+      float j;
+      z = x->real+y->real;
+      j = x->complex + y->complex;
+      printf("%f + %fi",z,j);
+
+}
+
+
+
+int main()
+{
+	struct complex x;
+	struct complex y;
+	printf("Enter Real numbers");
+	scanf ("%f",&x.real);
+	scanf("%f",&y.real);
+
+	printf("\nEnter Real numbers");
+		scanf ("%f",&x.complex);
+		scanf("%f",&y.complex);
+
+add (&x,&y);
+
+}
