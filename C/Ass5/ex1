@@ -1,0 +1,51 @@
+/*
+ * ex1.c
+ *
+ *  Created on: 31 Jul 2023
+ *      Author: marwan
+ */
+
+#include <stdio.h>
+#include <string.h>
+
+struct a
+{
+   char name [100];
+   int roll;
+   float mark;
+};
+
+
+
+
+int main()
+{
+	char firstname[100];
+	char secname[100];
+	struct a x ;
+
+
+	printf("Enter Infromation of Student\n");
+
+	printf("Name: ");
+	scanf("%s",firstname);
+	printf("\n");
+	scanf("%s",secname);
+	strcpy(x.name,firstname);
+	strcat(x.name," ");
+	strcat(x.name,secname);
+
+	printf("\nRoll:");
+	scanf("%d",&x.roll);
+
+	printf("\nMarks: ");
+	scanf("%f",&x.mark);
+
+	printf("%s",x.name);
+	printf("\n%d",x.roll);
+	printf("\n%lf",x.mark);
+
+
+
+
+}
