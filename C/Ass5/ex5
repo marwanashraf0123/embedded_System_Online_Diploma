@@ -1,0 +1,21 @@
+/*
+ * ex5.c
+ *
+ *  Created on: 31 Jul 2023
+ *      Author: marwan
+ */
+
+#include<stdio.h>
+
+#define area(r)\
+{\
+	float sum;\
+    sum = 3.14*r*r;\
+    printf("%f",sum);\
+}
+
+
+int main()
+{
+	area(5);
+}
